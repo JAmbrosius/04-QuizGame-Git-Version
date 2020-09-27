@@ -16,7 +16,7 @@ public class LevelQuestions {
 
     private void createQuestions(int level){
         if(level == 1){
-            //TODO Fragen hinzufügen
+            //TODO Hendrik: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -25,7 +25,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 2){
-            //TODO Fragen hinzufügen
+            //TODO Hendrik: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -34,7 +34,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 3){
-            //TODO Fragen hinzufügen
+            //TODO Robin: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -43,7 +43,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 4){
-            //TODO Fragen hinzufügen
+            //TODO Robin: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -52,7 +52,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 5){
-            //TODO Fragen hinzufügen
+            //TODO Niklas: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -61,7 +61,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 6){
-            //TODO Fragen hinzufügen
+            //TODO Leyla: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -70,7 +70,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 7){
-            //TODO Fragen hinzufügen
+            //TODO Marie: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -79,7 +79,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 8){
-            //TODO Fragen hinzufügen
+            //TODO Kacper: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -88,7 +88,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 9){
-            //TODO Fragen hinzufügen
+            //TODO Mohammed: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -97,7 +97,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 10){
-            //TODO Fragen hinzufügen
+            //TODO Emre: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -106,7 +106,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 11){
-            //TODO Fragen hinzufügen
+            //TODO Ömer: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -115,7 +115,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 12){
-            //TODO Fragen hinzufügen
+            //TODO Ambro: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -124,7 +124,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 13){
-            //TODO Fragen hinzufügen
+            //TODO Ambro: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -133,7 +133,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 14){
-            //TODO Fragen hinzufügen
+            //TODO Ambro: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";
@@ -142,7 +142,7 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 15){
-            //TODO Fragen hinzufügen
+            //TODO Ambro: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
             answers1[0] = "HG";

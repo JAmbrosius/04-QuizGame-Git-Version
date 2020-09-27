@@ -43,5 +43,5 @@ public class MainView extends JFrame {
         this.getContentPane().revalidate();
     }
 
-    //TODO Panel für Highscore anlegen und über die MainView aufrufbar machen
+    //TODO Niklas: Panel für Highscore anlegen und über die MainView aufrufbar machen
 }

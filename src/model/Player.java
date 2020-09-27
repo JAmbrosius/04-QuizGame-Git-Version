@@ -2,7 +2,7 @@ package model;
 
 public class Player {
 
-    //TODO Model um erreichte Punkte und ein Spieldatum+Uhrzeit erweitern
+    //TODO Emin: Model um erreichte Punkte und ein Spieldatum+Uhrzeit erweitern
 
     private String name;
     private int level;

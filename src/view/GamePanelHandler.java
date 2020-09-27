@@ -95,5 +95,7 @@ public class GamePanelHandler {
         }
     }
 
-    //TODO View um eine Punkteanzeige und eine Progressbar erweitern
+    //TODO Simon: View um eine Punkteanzeige und eine Progressbar erweitern
+
+    //TODO Niclas: Knöpfe für 50/50 mit passendem Aufruf beim MainController (Methoden im MC schreibt Max)
 }

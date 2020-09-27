@@ -25,9 +25,9 @@ public class MainController {
         return player.getLevel();
     }
 
-    //TODO Schreiben und Lesen der Spielerpunkte hinzufügen
+    //TODO Marie: Schreiben und Lesen der Spielerpunkte hinzufügen
 
-    //TODO Auslesen des Spieldatums+Uhrzeit hinzufügen
+    //TODO Leyla: Auslesen des Spieldatums+Uhrzeit hinzufügen
 
     public String[] getQuestionAndAnswers(){
         String[] question = questionHandler.getRandomQuestions(getPlayerLevel());
@@ -52,7 +52,7 @@ public class MainController {
         return false;
     }
 
-    //TODO Highscore verwalten über eine *.txt-Datei
+    //TODO Erik: Highscore verwalten über eine *.txt-Datei
 
-    //TODO 50/50-Joker einsetzen mit Punkt-Reduktion beim player-Objekt
+    //TODO Max: 50/50-Joker einsetzen mit Punkt-Reduktion beim player-Objekt
 }
