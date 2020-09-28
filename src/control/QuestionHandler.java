@@ -12,10 +12,10 @@ public class QuestionHandler {
     }
 
     public String[] getRandomQuestions(int level){
-        if(level<15) {
+        if(level<=15) {
             String[] output = new String[6];
 
-            Question q = allLevelQuestions[level].getRandomQuestion();
+            Question q = allLevelQuestions[level-1].getRandomQuestion();
             output[0] = q.getQuestion();
             output[1] = q.getAnswers()[0];
             output[2] = q.getAnswers()[1];

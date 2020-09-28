@@ -106,7 +106,7 @@ public class GamePanelHandler {
         }else{
             progressBar1.setValue(progressBar1.getMaximum());
         }
-        //playerScore.setText(String.valueOf(mainController.getPlayerScore()));
+        playerScore.setText(String.valueOf(mainController.getPlayerpoints()));
     }
 
     //TODO Niclas: Knöpfe für 50/50 mit passendem Aufruf beim MainController (Methoden im MC schreibt Max)
