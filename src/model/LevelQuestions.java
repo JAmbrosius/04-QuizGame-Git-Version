@@ -109,11 +109,11 @@ public class LevelQuestions {
             //TODO Ömer: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
-            answers1[0] = "HG";
-            answers1[1] = "GadsA";
-            answers1[2] = "KKG";
-            answers1[3] = "STG";
-            questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
+            answers1[0] = "Ja";
+            answers1[1] = "Nein";
+            answers1[2] = "Nur wenn man nicht hinguckt";
+            answers1[3] = "Ich weiß es nicht";
+            questions[0] = new Question("Kann ein Baum fliegen ?",answers1,"B");
         }else if(level == 12){
             //TODO Ambro: Fragen hinzufügen
             questions = new Question[1];
@@ -136,11 +136,11 @@ public class LevelQuestions {
             //TODO Ambro: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
-            answers1[0] = "HG";
-            answers1[1] = "GadsA";
-            answers1[2] = "KKG";
-            answers1[3] = "STG";
-            questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
+            answers1[0] = "Direktes Internet";
+            answers1[1] = "Proxy";
+            answers1[2] = "Windows-Zugangssperre";
+            answers1[3] = "Bios-Passwort";
+            questions[0] = new Question("Was muss in den Info-Räumen eingestellt sein, damit Git läuft?",answers1,"A");
         }else if(level == 15){
             //TODO Ambro: Fragen hinzufügen
             questions = new Question[1];
