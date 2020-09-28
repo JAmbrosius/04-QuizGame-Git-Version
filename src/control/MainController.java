@@ -31,7 +31,9 @@ public class MainController {
     public int getPlayerpoints(){return player.getPunkte();}
 
     //TODO Leyla: Auslesen des Spieldatums+Uhrzeit hinzufügen
-
+    public String getPlayerDatumZeit(){
+        return player.getDatumzeit();
+    }
     public String[] getQuestionAndAnswers(){
         String[] question = questionHandler.getRandomQuestions(getPlayerLevel());
 

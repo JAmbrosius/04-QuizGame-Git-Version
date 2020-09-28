@@ -159,7 +159,7 @@
           </grid>
         </constraints>
         <properties>
-          <maximum value="15"/>
+          <maximum value="14"/>
           <orientation value="1"/>
           <string value="0 %"/>
         </properties>
