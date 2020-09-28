@@ -9,7 +9,7 @@ public class Player {
 
     private String name;
     private int level;
-    private int punkte;
+    private int points;
     private SimpleDateFormat datumzeit;
     private Date dnow;
     //Kommentar
@@ -20,7 +20,7 @@ public class Player {
         this.dnow=new Date();
         this.name = name;
         this.level = 1;
-        this.punkte=0;
+        this.points =0;
     }
 
     public String getName(){
@@ -35,8 +35,8 @@ public class Player {
         level = newLevel;
     }
 
-    public void setPunkte(int punkte) {
-        this.punkte = punkte;
+    public void setPoints(int points) {
+        this.points = points;
     }
 
     public String getDatumzeit() {
@@ -45,7 +45,7 @@ public class Player {
         return datumzeit1;
     }
 
-    public int getPunkte() {
-        return punkte;
+    public int getPoints() {
+        return points;
     }
 }

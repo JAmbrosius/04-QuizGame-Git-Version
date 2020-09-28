@@ -2,8 +2,6 @@ package control;
 
 import model.Player;
 
-import java.util.Arrays;
-
 public class MainController {
 
     //Referenzen
@@ -28,14 +26,15 @@ public class MainController {
     }
 
     //TODO Marie: Schreiben und Lesen der Spielerpunkte hinzufügen
-    public void setPlayerpoints(int p) {player.setPunkte(p);}
+    public void setPlayerpoints(int p) {player.setPoints(p);}
 
-    public int getPlayerpoints(){return player.getPunkte();}
+    public int getPlayerpoints(){return player.getPoints();}
 
     //TODO Leyla: Auslesen des Spieldatums+Uhrzeit hinzufügen
     public String getPlayerDatumZeit(){
         return player.getDatumzeit();
     }
+
     public String[] getQuestionAndAnswers(){
         String[] question = questionHandler.getRandomQuestions(getPlayerLevel());
 
