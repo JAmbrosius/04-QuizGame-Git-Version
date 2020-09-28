@@ -52,14 +52,14 @@ public class LevelQuestions {
             answers1[3] = "STG";
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 5){
-            //TODO Niklas: Fragen hinzufügen
+            //TODO Niklas: Fragen hinzufügen -- erledigt
             questions = new Question[1];
             String[] answers1 = new String[4];
-            answers1[0] = "HG";
-            answers1[1] = "GadsA";
-            answers1[2] = "KKG";
-            answers1[3] = "STG";
-            questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
+            answers1[0] = "E=mc²";
+            answers1[1] = "a²+b²=c²";
+            answers1[2] = "a²*b²=c²";
+            answers1[3] = "Was ist das?";
+            questions[0] = new Question("Wie lautet der Satz des Pythagoras?",answers1,"B");
         }else if(level == 6){
             //TODO Leyla: Fragen hinzufügen
             questions = new Question[1];
