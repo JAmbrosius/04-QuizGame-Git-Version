@@ -16,6 +16,8 @@ public class GamePanelHandler {
     private JButton answerC;
     private JButton answerD;
     private JTextArea moderator;
+    private JLabel playerScore;
+    private JProgressBar progressBar1;
 
     private MainController mainController;
 
@@ -72,6 +74,8 @@ public class GamePanelHandler {
         answerB.setText(qA[2]);
         answerC.setText(qA[3]);
         answerD.setText(qA[4]);
+
+        updateGui();
     }
 
     /**
@@ -96,6 +100,14 @@ public class GamePanelHandler {
     }
 
     //TODO Simon: View um eine Punkteanzeige und eine Progressbar erweitern
+    public void updateGui(){
+        if(mainController.getPlayerLevel()<progressBar1.getMaximum()) {
+            progressBar1.setValue(mainController.getPlayerLevel() - 1);
+        }else{
+            progressBar1.setValue(progressBar1.getMaximum());
+        }
+        //playerScore.setText(String.valueOf(mainController.getPlayerScore()));
+    }
 
     //TODO Niclas: Knöpfe für 50/50 mit passendem Aufruf beim MainController (Methoden im MC schreibt Max)
 }
