@@ -49,21 +49,21 @@ public class LevelQuestions {
             answers1[1] = "2";
             answers1[2] = "3";
             answers1[3] = "4";
-            questions[1] = new Question("Test?",answers1,"A");
+            questions[1] = new Question("Test?",answers2,"A");
 
             String[] answers3 = new String[4];
             answers1[0] = "78";
             answers1[1] = "56";
             answers1[2] = "52";
             answers1[3] = "22";
-            questions[2] = new Question("Wieviele Karten befinden sich in einem Tarot-Deck?",answers1,"A");
+            questions[2] = new Question("Wieviele Karten befinden sich in einem Tarot-Deck?",answers3,"A");
 
             String[] answers4 = new String[4];
             answers1[0] = "1a";
             answers1[1] = "2b";
             answers1[2] = "3c";
             answers1[3] = "4d";
-            questions[3] = new Question("...?",answers1,"A");
+            questions[3] = new Question("...?",answers4,"A");
 
         }else if(level == 4){
             //TODO Robin: Fragen hinzufügen
