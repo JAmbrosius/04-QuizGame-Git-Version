@@ -26,6 +26,9 @@ public class MainController {
     }
 
     //TODO Marie: Schreiben und Lesen der Spielerpunkte hinzufügen
+    public void setPlayerpoints(int p) {player.getPoints = p;}
+
+    public int getPlayerpoints(){return player.getPoints;}
 
     //TODO Leyla: Auslesen des Spieldatums+Uhrzeit hinzufügen
 

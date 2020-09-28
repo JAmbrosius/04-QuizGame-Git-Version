@@ -73,11 +73,11 @@ public class LevelQuestions {
             //TODO Marie: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
-            answers1[0] = "HG";
-            answers1[1] = "GadsA";
-            answers1[2] = "KKG";
-            answers1[3] = "STG";
-            questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
+            answers1[0] = "mit horizontalen Pupillen";
+            answers1[1] = "keine Ahnung so komische halt";
+            answers1[2] = "mit vertikalen Pupillen";
+            answers1[3] = "Ziegen machen mir Angst";
+            questions[0] = new Question("Was für Augen haben Ziegen?",answers1,"A");
         }else if(level == 8){
             //TODO Kacper: Fragen hinzufügen
             questions = new Question[1];
