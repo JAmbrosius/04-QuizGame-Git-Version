@@ -16,11 +16,15 @@ public class GamePanelHandler {
     private JButton answerC;
     private JButton answerD;
     private JTextArea moderator;
+    private JLabel playerScore;
+    private JProgressBar progressBar1;
 
     private MainController mainController;
+    private MainView mainView;
 
-    public GamePanelHandler(MainController mainController){
+    public GamePanelHandler(MainController mainController, MainView mainView){
         this.mainController = mainController;
+        this.mainView = mainView;
         playerName.setText(mainController.getPlayerName());
         playerLevel.setText(String.valueOf(mainController.getPlayerLevel()));
         createButtons();
@@ -72,6 +76,8 @@ public class GamePanelHandler {
         answerB.setText(qA[2]);
         answerC.setText(qA[3]);
         answerD.setText(qA[4]);
+
+        updateGui();
     }
 
     /**
@@ -85,17 +91,31 @@ public class GamePanelHandler {
         if(mainController.answer(answer)){ //Falls Antwort korrekt, dann..
             moderator.setText("Richtig! Auf zur nächsten Frage!");
             playerLevel.setText(String.valueOf(mainController.getPlayerLevel()));
-            updateQuestionAndAnswers();     //Unbedingt die GUI aktualisieren!
+            if(mainController.getPlayerLevel()<=15) {
+                updateQuestionAndAnswers();     //Unbedingt die GUI aktualisieren!
+            }else{
+                mainView.end();
+            }
         }else{  //sonst werden die Knöpfe ausgeschaltet etc.
             answerA.setEnabled(false);
             answerB.setEnabled(false);
             answerC.setEnabled(false);
             answerD.setEnabled(false);
             moderator.setText("Schade, du hast verloren.");
+
+            mainView.end();
         }
     }
 
-    //TODO Simon: View um eine Punkteanzeige und eine Progressbar erweitern
+    //TODO Simon: View um eine Punkteanzeige und eine Progressbar erweitern // Fertig
+    public void updateGui(){
+        if(mainController.getPlayerLevel()<progressBar1.getMaximum()) {
+            progressBar1.setValue(mainController.getPlayerLevel() - 1);
+        }else{
+            progressBar1.setValue(progressBar1.getMaximum());
+        }
+        playerScore.setText(String.valueOf(mainController.getPlayerpoints()));
+    }
 
     //TODO Niclas: Knöpfe für 50/50 mit passendem Aufruf beim MainController (Methoden im MC schreibt Max)
 }
