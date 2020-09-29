@@ -16,7 +16,7 @@ public class LevelQuestions {
 
     private void createQuestions(int level){
         if(level == 1){
-            //TODO Hendrik: Fragen hinzufügen --Done--
+            //TODO Hendrik: Level 1: Fragen hinzufügen --Done--
             //Frage 1.1
             questions = new Question[5];
             String[] answers1 = new String[4];
@@ -54,7 +54,7 @@ public class LevelQuestions {
             answers5[3] = "Ping-Pong oder Sanduhr";//Comment
             questions[4] = new Question("Wie ist jeder Text in jedem Fach aufgebaut?",answers5,"A");
         }else if(level == 2){
-            //TODO Hendrik: Fragen hinzufügen --Done--
+            //TODO Hendrik: Level 2: Fragen hinzufügen --Done--
             questions = new Question[5];
             //Frage 2.1
             String[] answers1 = new String[4];
