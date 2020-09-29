@@ -10,7 +10,7 @@ public class MainView extends JFrame {
 
     // Referenzen
     private MainController mainController;
-    private JPanel startPanel, gamePanel;
+    private JPanel startPanel, gamePanel, endPanel;
 
     /**
      * Konstruktor
@@ -37,9 +37,19 @@ public class MainView extends JFrame {
         this.getContentPane().removeAll();
         this.getContentPane().invalidate();
 
-        this.gamePanel = new GamePanelHandler(mainController).getPanel();
+        this.gamePanel = new GamePanelHandler(mainController, this).getPanel();
 
         this.getContentPane().add(gamePanel);
+        this.getContentPane().revalidate();
+    }
+
+    public void end(){
+        this.getContentPane().removeAll();
+        this.getContentPane().invalidate();
+
+        this.endPanel = new EndPanelHandler(this, mainController).getPanel();
+
+        this.getContentPane().add(endPanel);
         this.getContentPane().revalidate();
     }
 
