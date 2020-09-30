@@ -76,18 +76,22 @@ public class GamePanelHandler {
                 abc[3] = "D";
                 String answersF[] = mainController.useJoker(abc);
                 button5050.setVisible(false);
-                for (int i = 1; i < 3; i++) {
+                answerA.setVisible(false);
+                answerB.setVisible(false);
+                answerC.setVisible(false);
+                answerD.setVisible(false);
+                for (int i = 0; i < 2; i++) {
                     if (answersF[i].equals("A")) {
-                        answerA.setVisible(false);
+                        answerA.setVisible(true);
                     }
                     if (answersF[i].equals("B")) {
-                        answerB.setVisible(false);
+                        answerB.setVisible(true);
                     }
                     if (answersF[i].equals("C")) {
-                        answerC.setVisible(false);
+                        answerC.setVisible(true);
                     }
                     if (answersF[i].equals("D")) {
-                        answerD.setVisible(false);
+                        answerD.setVisible(true);
                     }
                 }
             }
