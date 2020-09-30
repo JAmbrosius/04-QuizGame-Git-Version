@@ -200,11 +200,11 @@ public class LevelQuestions {
             //TODO Ambro: Fragen hinzufügen
             questions = new Question[1];
             String[] answers1 = new String[4];
-            answers1[0] = "HG";
-            answers1[1] = "GadsA";
-            answers1[2] = "KKG";
-            answers1[3] = "STG";
-            questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
+            answers1[0] = "Niemals!";
+            answers1[1] = "Natürlich!";
+            answers1[2] = "Wer ist Simon?";
+            answers1[3] = "Wenn ja, wie viele?";
+            questions[0] = new Question("Wird es Simon schaffen?",answers1,"B");
         }else if(level == 13){
             //TODO Ambro: Fragen hinzufügen
             questions = new Question[1];
