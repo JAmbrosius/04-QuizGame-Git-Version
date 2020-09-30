@@ -18,6 +18,7 @@ public class GamePanelHandler {
     private JTextArea moderator;
     private JLabel playerScore;
     private JProgressBar progressBar1;
+    private JButton button5050;
 
     private MainController mainController;
     private MainView mainView;
@@ -63,6 +64,34 @@ public class GamePanelHandler {
                 handleAnswer("D");
             }
         });
+        //TODO Niclas: Knöpfe für 50/50 mit passendem Aufruf beim MainController (Methoden im MC schreibt Max)
+        button5050.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String[] abc;
+                abc = new String[4];
+                abc[0] = "A";
+                abc[1] = "B";
+                abc[2] = "C";
+                abc[3] = "D";
+                String answersF[] = mainController.useJoker(abc);
+                button5050.setVisible(false);
+                for (int i = 1; i < 3; i++) {
+                    if (answersF[i].equals("A")) {
+                        answerA.setVisible(false);
+                    }
+                    if (answersF[i].equals("B")) {
+                        answerB.setVisible(false);
+                    }
+                    if (answersF[i].equals("C")) {
+                        answerC.setVisible(false);
+                    }
+                    if (answersF[i].equals("D")) {
+                        answerD.setVisible(false);
+                    }
+                }
+            }
+        });
     }
 
     /**
@@ -72,6 +101,10 @@ public class GamePanelHandler {
     public void updateQuestionAndAnswers(){
         String[] qA = mainController.getQuestionAndAnswers();
         questionArea.setText(qA[0]);
+        answerA.setVisible(true);
+        answerB.setVisible(true);
+        answerC.setVisible(true);
+        answerD.setVisible(true);
         answerA.setText(qA[1]);
         answerB.setText(qA[2]);
         answerC.setText(qA[3]);
@@ -117,5 +150,4 @@ public class GamePanelHandler {
         playerScore.setText(String.valueOf(mainController.getPlayerpoints()));
     }
 
-    //TODO Niclas: Knöpfe für 50/50 mit passendem Aufruf beim MainController (Methoden im MC schreibt Max)
 }

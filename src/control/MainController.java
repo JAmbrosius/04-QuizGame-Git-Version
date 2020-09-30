@@ -68,7 +68,7 @@ public class MainController {
     }
 
     //TODO Max: 50/50-Joker einsetzen mit Punkt-Reduktion beim player-Objekt
-    public String[] useJoker(String rightAnswer, String[] answers) {
+    public String[] useJoker(String[] answers) {
         String[] questionsWithoutRA = new String[3];
         for(String a: answers) {
             if(!a.equals(rightAnswer)) {
