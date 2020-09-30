@@ -198,13 +198,18 @@ public class LevelQuestions {
             questions[0] = new Question("An welcher Schule findet der Info-LK statt?",answers1,"C");
         }else if(level == 12){
             //TODO Ambro: Fragen hinzufügen
-            questions = new Question[1];
+            questions = new Question[2];
             String[] answers1 = new String[4];
             answers1[0] = "Niemals!";
             answers1[1] = "Natürlich!";
             answers1[2] = "Wer ist Simon?";
             answers1[3] = "Wenn ja, wie viele?";
             questions[0] = new Question("Wird es Simon schaffen?",answers1,"B");
+            answers1[0] = "Super";
+            answers1[1] = "Mega";
+            answers1[2] = "Super-Mega";
+            answers1[3] = "STG";
+            questions[1] = new Question("Wie cool bin ich?",answers1,"C");
         }else if(level == 13){
             //TODO Ambro: Fragen hinzufügen
             questions = new Question[1];
